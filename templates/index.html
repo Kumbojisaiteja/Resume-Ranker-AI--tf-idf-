@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Matcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class = "nav-bar">
+        <div class = "logo">
+        ResumeRanker AI</div>
+
+     <div class = "nav-links">
+
+        <a href = "#">Home</a>
+        <a href = "#about">About us</a>
+        <a class = "btn"  href = "/prediction">Get Started</a>
+     </div>
+     </nav>
+
+
+     <section class="hero"> 
+        <div class="hero-text">
+            <h1>Identify your ATS score using AI</h1>
+
+        <p>Upload resume along with a job description to quickly evaluate candidate suitability. The system uses AI to analyze skills, experience, and overall relevance, providing a match score, identifying missing skills, and recommending the most suitable job roles within seconds. </p>
+        <br>
+        <p>Click Get Started to begin the analysis.</p>
+
+        <a class="btn" href = "/prediction">Get started</a>
+</div>
+    <img src = "{{url_for('static',filename='images/resume1.jfif') }}">
+
+</section>
+
+<section id = "about" class="about">
+    <img src = "{{url_for('static',filename='images/res2.jfif') }}">
+
+    <div class="about-text">
+
+<h2>About Us</h2>
+
+<p>
+Our system is an AI-powered resume screening platform that analyzes resumes and matches them with job descriptions to identify the best candidates efficiently.
+</p>
+
+<div class="about-features">
+
+<div class="feature">
+<p><b>AI-Powered Matching:</b></p>
+<p>Our system uses machine learning and NLP to evaluate how well a resume matches a given job description.</p>
+</div>
+
+<br>
+
+<div class="feature">
+<p><b>Smart Resume Scoring:</b></p>
+<p>Generates a match score (0–100) based on semantic similarity, skills, and experience.</p>
+</div>
+
+<br>
+
+<div class="feature">
+<p><b>Skill Extraction:</b></p>
+<p>Automatically extracts and compares skills from resumes and job descriptions.</p>
+</div>
+
+<br>
+
+<div class="feature">
+<p><b>Explainable Results:</b></p>
+<p>Provides clear reasons for predictions, including missing skills and improvement suggestions.</p>
+</div>
+
+<br>
+
+<div class="feature">
+<p><b>Job Recommendation:</b></p>
+<p>Suggests suitable job roles based on the candidate’s skill set.</p>
+</div>
+
+<br>
+
+<div class="feature">
+<p><b>Multi-Format Support:</b></p>
+<p>Supports PDF, DOCX, TXT extenstion files for uploads.</p>
+</div>
+
+<br>
+
+<div class="feature">
+<p><b>User Friendly:</b></p>
+<p>Simple interface to upload resumes and get instant analysis.</p>
+</div>
+
+</div>
+</div>
+</section>
+<footer>ResumeRanker AI</footer>
+</div>
+
+</body>
+</html>

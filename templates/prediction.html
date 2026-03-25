@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prediction</title>
+     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <nav class="nav-bar">
+        <div class="logo">ResumeRanker AI</div>
+
+        <div class="nav-links">
+            <a href="/">Home </a>
+            <a href="/#about">About us</a>
+            <a class="btn" href="/">Get Started</a>
+        </div>
+</nav>
+        <div class="prediction-heading">
+            <h1>Upload Resume and Job Description below </h1>
+        </div>
+<div class="container">
+     <form action="/predict" method="POST" enctype="multipart/form-data">
+
+        <label>Upload Resumes:</label>
+        <input type="file" name="resumes" accept=".pdf,.docx,.txt" multiple required>
+
+        <label>Paste Job Description:</label>
+        <textarea name="jd" rows="10" required></textarea>
+
+        <button type="submit">Analyze</button>
+
+    </form>
+
+
+        </div>
+    
+</body>
+</html>

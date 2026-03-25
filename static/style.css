@@ -1,0 +1,290 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+body {
+    width:100%;
+    min-height:100vh;
+    background:#f8f8f8;
+}
+
+/* NAV BAR */
+.nav-bar{
+    position:sticky;
+    top:0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding:20px 5%;
+    background: white;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+
+}
+
+.logo{
+    font-size:25px;
+    font-weight: bold;
+    color:#306FA2;
+
+}
+
+.nav-links a{
+    margin-left: 20px;
+    text-decoration:none ;
+    color:#444;
+    font-size : 15px;
+    font-weight: 600;
+
+
+}
+
+.btn{
+    background-color:#0a2540 ;
+    color: white;
+    padding :8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+
+.nav-links .btn{
+    background:#0a2540;
+    color:white;
+}
+
+/* HERO*/
+
+.hero
+{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 80px 5%;
+    flex-wrap:wrap;
+
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+    font-size: 38px;
+    margin-bottom: 15px;
+    color:#333;
+}
+
+.hero-text p{
+    margin-bottom: 20px;
+    color:#333;
+    font-size:17px;
+}
+
+.hero img{
+width:500px;
+max-width:100%;
+border-radius:10px;
+}
+
+
+/*ABOUT US*/
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 5%;
+    flex-wrap:wrap;
+}
+
+.about-text{
+    max-width:500px;
+}
+
+.about img{
+    width:500px;
+    max-width: 100%;
+    border-radius:10px;
+}
+
+.about-text h2{
+    font-size: 38px;
+    margin-bottom: 15px;
+    color:#333;
+}
+
+.about-text p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+.feature b{
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.feature p{
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+/* Prediction */
+
+.prediction-heading{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+
+}
+
+.center {
+    text-align: center;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* RESULT*/
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.card b{
+font-size: 20px;
+}
+
+.card h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color:#333;
+}
+
+
+.score {
+    font-size: 20px;
+    color: green;
+}
+
+.circle{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background:conic-gradient(
+        #007BFF calc(var(--score) * 1%), 
+        #ddd 0%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.inner{
+    height: 80px;
+    width:80px;
+    border-radius: 50%;
+    background:white;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+.card2 b{
+    font-size: 20px;
+    margin-bottom:20px ;
+}
+
+.card2 p{
+    margin-bottom: 15px;
+}
+
+.back-to-H a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+
+}
+/*  LOADER */
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #007BFF;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+/* FOOTER */
+
+
+footer{
+background:white;
+padding:30px;
+text-align:center;
+margin-top:40px;
+}
+
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.about{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+margin-top:30px;
+}
+
+.about img{
+margin-bottom:30px;
+}
+
+.navbar{
+flex-direction:column;
+gap:10px;
+}
+}
