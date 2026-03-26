@@ -1,0 +1,8 @@
+flask
+numpy
+scikit-learn
+xgboost
+pandas
+PyPDF2
+python-docx
+gunicorn
