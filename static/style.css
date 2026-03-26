@@ -261,30 +261,107 @@ margin-top:40px;
     100% { transform: rotate(360deg); }
 }
 
-/* MOBILE */
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px){
 
-@media(max-width:768px){
+    /* NAVBAR */
+    .nav-bar{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 15px 5%;
+    }
 
-.hero{
-flex-direction:column;
-text-align:center;
-}
+    .nav-links{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
-.about{
-flex-direction:column;
-text-align:center;
-}
+    .nav-links a{
+        margin: 5px 10px 0 0;
+        font-size: 14px;
+    }
 
-.hero img{
-margin-top:30px;
-}
+    /* HERO */
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
 
-.about img{
-margin-bottom:30px;
-}
+    .hero-text h1{
+        font-size: 26px;
+    }
 
-.navbar{
-flex-direction:column;
-gap:10px;
-}
+    .hero-text p{
+        font-size: 15px;
+    }
+
+    .hero img{
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    /* ABOUT */
+    .about{
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 5%;
+    }
+
+    .about-text h2{
+        font-size: 26px;
+    }
+
+    .about img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* FORM / PREDICTION */
+    .container{
+        width: 95%;
+    }
+
+    input, textarea{
+        font-size: 14px;
+    }
+
+    button{
+        width: 100%;
+        font-size: 16px;
+    }
+
+    /* RESULT CARD */
+    .card{
+        padding: 15px;
+    }
+
+    .card h2{
+        font-size: 20px;
+    }
+
+    .score{
+        font-size: 18px;
+    }
+
+    /* CIRCLE */
+    .circle{
+        width: 80px;
+        height: 80px;
+    }
+
+    .inner{
+        width: 60px;
+        height: 60px;
+        font-size: 10px;
+    }
+
+    /* FOOTER */
+    footer{
+        padding: 20px;
+        font-size: 14px;
+    }
 }
