@@ -4,12 +4,12 @@ A Machine Learning-based web application that analyzes resumes against job descr
 
 
 
-## 🌐Live Demo
+## Live Demo
 https://resume-ranker-ai-tf-idf.onrender.com
 
 ---
 
-## 📌 Features
+## Features
 
 - Upload multiple resumes (PDF, DOCX, TXT)
 - Compare resumes with job descriptions
@@ -21,7 +21,7 @@ https://resume-ranker-ai-tf-idf.onrender.com
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. Text is extracted from resume & job description
 2. Data is cleaned using NLP preprocessing
@@ -49,32 +49,9 @@ https://resume-ranker-ai-tf-idf.onrender.com
 
 ---
 
-## 📁 Project Structure
-RESUME-RANKER-TF-IDF/
-│
-├── app.py
-├── requirements.txt
-├── Procfile
-│
-├── model/
-│ ├── best_model-tf-idf.pkl
-│ ├── best_scaler-tf-idf.pkl
-│ └── best_tfidf-tf-idf.pkl
-│
-├── templates/
-│ ├── index.html
-│ ├── prediction.html
-│ └── result.html
-│
-├── static/
-│ ├── style.css
-│ └── images/
-│
-└── dataset/
-
 ##  Run Locally
 
-pip install -r requirements.txt
-python app.py
+-pip install -r requirements.txt
+-python app.py
 
 
