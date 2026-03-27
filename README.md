@@ -51,7 +51,8 @@ https://resume-ranker-ai-tf-idf.onrender.com
 
 ##  Run Locally
 
--pip install -r requirements.txt
--python app.py
+pip install -r requirements.txt
+
+python app.py
 
 
